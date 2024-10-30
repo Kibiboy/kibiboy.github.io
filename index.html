@@ -3,71 +3,89 @@
 <html>
 
 <head>
-<style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@font-face {
+			font-family: "AMI EGA";
+			src: url("font/ami_ega.woff");
+		}
 
-@font-face {
-	font-family: "AMI EGA";
-	src: url("font/ami_ega.woff");
-}
+		body {
+			background-color: #090222;
+			font-family: "AMI EGA", "Courier New";
+			font-size: 16px;
+			color: #f6f3d0;
+		}
 
-body {
-	background-color: #090222;
-	font-family: "AMI EGA", "Andalé Mono", "Andale Mono", "Courier New";
-	font-size: 16px;
-	color: #f6f3d0;
-}
+		p {
+			line-height: 120%;
+			margin: 16px 16px 16px 16px;
+		}
 
-p {
-	line-height: 120%;
-}
+		h1 {
+			color: #ffda14;
+			margin-top: 20px;
+			margin-bottom: 0px;
+			text-align: center;
+		}
 
-h1 {
-	color: #ffda14;
-	font-size: 80px;
-	margin-top: 20px;
-	margin-bottom: 0px;
-	text-align: center;
-}
+		.ascii {
+			font-size: 2vw;
+			font-family: "AMI EGA", "Courier New";
+			line-height: 120%;
+		}
 
-img {
-	image-rendering: pixelated;
-}
+		img {
+			image-rendering: pixelated;
+		}
 
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-}
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+		}
 
-div {
-	width:600px;
-	margin:auto;
-	background-color: #4442be
-}
+		div {
+			width: 80%;
+			margin:auto;
+		}
 
-
-</style>
+		footer {
+			background-color: #4442be;
+		}
+	</style>
 </head>
 
 
 <body>
 
-<img src="images/tab_bar.png" alt="The KIBIBOY editor's tab bar" class="center">
+	<img src="images/tab_bar.png" alt="The KIBIBOY editor's tab bar" class="center">
 
-<div id="main-content">
+	<div id="main-content">
 
-<h1> KIBIBOY </h1>
-<p style="text-align:center"> Your teeny tool for arcade-y games! </p>
+	<pre class="ascii">
+<span style="color: #721b30">Welcome to</span>
+<span style="color: #f86b89">._..__ ._. .__.  ._. .__.  .___  __  __</span>
+<span style="color: #f99616">| |/ / | | | . \ | | | . \ |   \ \ \/ /</span>
+<span style="color: #ffda14">|   /  | | |   / | | |   / |^u^|  \  / </span>
+<span style="color: #a8ff51">|   \  | | | . \ | | | . \ |   |  / /  </span>
+<span style="color: #24b2ba">|_|\_\ |_| |___/ |_| |___/ |___| /_/  </span>
+<span style="color: #4442be">=======================================</span>
+Your teeny tool to make arcade-y games!
+	</pre>
 
-</div>
+	</div>
 
-<footer>
-<p style="text-align:center">
-"AMI-EGA" is an adaptation made by Santiago Crespo from the "Mx437 AMI EGA 8x8" font by VileR, under the CC BY-SA 4.0.
-Site content and design (c) 2024 - Present Hot Noggin Studios.
-</p>
-</footer> 
+	<div id="footer">
+		<footer>
+			<p style="text-align:center">
+				"AMI-EGA" is an adaptation made by Santiago Crespo from the "Mx437 AMI EGA 8x8"
+				font by VileR, under the CC BY-SA 4.0.
+				Site content and design (c) 2024 - Present Hot Noggin Studios.
+			</p>
+		</footer>
+	</div>
 
 </body>
 
