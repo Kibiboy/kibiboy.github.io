@@ -12,7 +12,7 @@
 
 		body {
 			background-color: #090222;
-			font-family: "AMI EGA", "Courier New";
+			font-family: "AMI EGA", "Courier New", Courier, monospace;
 			font-size: 16px;
 			color: #f6f3d0;
 		}
@@ -20,6 +20,7 @@
 		p {
 			line-height: 120%;
 			margin: 16px 16px 16px 16px;
+			font-family: "Courier New", Courier, monospace;
 		}
 
 		h1 {
@@ -30,9 +31,14 @@
 		}
 
 		.ascii {
-			font-size: 2vw;
-			font-family: "AMI EGA", "Courier New";
+			font-size: 1.9vw;
+			font-family: "AMI EGA", "Courier New", Courier, monospace;
 			line-height: 120%;
+		}
+
+		code {
+			font-family: "AMI EGA", "Courier New", Courier, monospace;
+			font-size: 16px;
 		}
 
 		img {
@@ -44,6 +50,15 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: 80%;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-start;
+			align-content: flex-start;
 		}
 
 		div {
@@ -62,9 +77,8 @@
 
 	<img src="images/tab_bar.png" alt="The KIBIBOY editor's tab bar" class="center">
 
-	<div id="main-content">
-
-	<pre class="ascii">
+	<div id="main-header">
+		<pre class="ascii">
 <span style="color: #721b30">Welcome to</span>
 <span style="color: #f86b89">._..__ ._. .__.  ._. .__.  .___  __  __</span>
 <span style="color: #f99616">| |/ / | | | . \ | | | . \ |   \ \ \/ /</span>
@@ -73,16 +87,30 @@
 <span style="color: #24b2ba">|_|\_\ |_| |___/ |_| |___/ |___| /_/  </span>
 <span style="color: #4442be">=======================================</span>
 Your teeny tool to make arcade-y games!
-	</pre>
+		</pre>
+	</div>
 
+	<div id="main-content">
+		<section id="what-is-kibiboy" class="container">
+			<img src="images/console.png" alt="The KIBIBOY editor console"
+			style="max-width: 300px; flex: 1" width = 100%>
+			<p style="flex: 1.2; min-width: 50%;">
+				The <code>KIBIBOY</code> is a free, open-source fantasy console.
+				It's built with its own specs and limitations,
+				just like a physical console, but runs on your device.
+				Your <code>KIBIBOY</code> comes with a command line and a cart editor
+				for creating and playing arcade-y games.
+			</p>
+		</section>
 	</div>
 
 	<div id="footer">
 		<footer>
-			<p style="text-align:center">
-				"AMI-EGA" is an adaptation made by Santiago Crespo from the "Mx437 AMI EGA 8x8"
-				font by VileR, under the CC BY-SA 4.0.
-				Site content and design (c) 2024 - Present Hot Noggin Studios.
+			<p style="text-align: center; font-size: 12px">
+				Site content and design (c) 2024 Hot Noggin Studios. All rights reserved.
+			<br>
+				"AMI-EGA" is an adaptation made by Santiago Crespo from the
+				"Mx437 AMI EGA 8x8" font by VileR, under the CC BY-SA 4.0 license.
 			</p>
 		</footer>
 	</div>
