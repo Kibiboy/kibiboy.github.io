@@ -7,7 +7,7 @@
 
 @font-face {
 	font-family: "AMI EGA";
-	src: url("font/ami_ega.ttf");
+	src: url("font/ami_ega.woff");
 }
 
 body {
@@ -15,6 +15,10 @@ body {
 	font-family: "AMI EGA", "Andalé Mono", "Andale Mono", "Courier New";
 	font-size: 16px;
 	color: #f6f3d0;
+}
+
+p {
+	line-height: 120%;
 }
 
 h1 {
@@ -26,9 +30,14 @@ h1 {
 }
 
 img {
-	width: 80%;
-	margin: center;
 	image-rendering: pixelated;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
 
 div {
@@ -44,7 +53,7 @@ div {
 
 <body>
 
-<img src="images/tab_bar.png" alt="The KIBIBOY editor's tab bar">
+<img src="images/tab_bar.png" alt="The KIBIBOY editor's tab bar" class="center">
 
 <div id="main-content">
 
